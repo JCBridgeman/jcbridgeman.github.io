@@ -1,5 +1,5 @@
 // JavaScript widget to display list of articles associated with an
-// arXiv author id. See http://arxiv.org/help/myarticles
+// arXiv author id. See https://arxiv.org/help/myarticles
 //
 // Copyright (C) 2009-2011 arXiv.org
 //
@@ -19,7 +19,7 @@
 
 var headID = document.getElementsByTagName("head")[0];
 var newScript = document.createElement('script');
-var urlPrefix = 'http://arxiv.org/a/';
+var urlPrefix = 'https://arxiv.org/a/';
 
 newScript.type = 'text/javascript';
 if (typeof arxiv_authorid === 'undefined') {
@@ -30,7 +30,7 @@ if (typeof arxiv_authorid === 'undefined') {
 	arxiv_authorid="bad_authorid";
 } else {
 	// Get local part of author id from local part or complete arXiv author 
-	// id (http://arxiv.org/a/local). Sanitize result.
+	// id (https://arxiv.org/a/local). Sanitize result.
 	if (arxiv_authorid.indexOf(urlPrefix) === 0) {
 	  arxiv_authorid=arxiv_authorid.substr(urlPrefix.length, 50);
 	}
@@ -101,7 +101,7 @@ function jsonarXivFeed(feed)
 function makearXiv(feed)
 {
     var x = 0;
-    //Much of this style is taken from http://arxiv.org/arXiv.css
+    //Much of this style is taken from https://arxiv.org/arXiv.css
     var html = '<div id="arxivcontainer" style="font-family:Lucida Grande,helvetica, arial, verdana,sans-serif;margin:.7em;font-size:90%">\n';
     var format_name = '';
     //If title, add as an h3, similar to the arxiv.org/list/*subject*/new
@@ -168,7 +168,7 @@ function makearXiv(feed)
 		    html += '\t\t<div class="list-doi" style="font-weight:normal;font-size:90%;"><span class="descriptor">DOI:</span> ';
 		    var dois = feed.entries[x].doi.split(' ');
 		    for (var j in dois) {
-		       html += '<a href="http://dx.doi.org/'+dois[j]+'">'+dois[j]+'</a> '; 
+		       html += '<a href="https://dx.doi.org/'+dois[j]+'">'+dois[j]+'</a> '; 
 		    }
 		    html += '</div>\n';
 	    }
@@ -180,11 +180,11 @@ function makearXiv(feed)
 	    html += '\t</div>\n</dd>';
     }
     if (extra_entries) {
-	    html +='<br /><span style="font-size:80%">[ Showing '+num_entries+' of '+feed.entries.length+' total entries, additional <a href="http://arxiv.org/a/'+arxiv_authorid+'">'+(feed.entries.length-num_entries)+'</a> entries available at arXiv.org ]</span>';
+	    html +='<br /><span style="font-size:80%">[ Showing '+num_entries+' of '+feed.entries.length+' total entries, additional <a href="https://arxiv.org/a/'+arxiv_authorid+'">'+(feed.entries.length-num_entries)+'</a> entries available at arXiv.org ]</span>';
     } else {
 	    html +='<br /><span style="font-size:80%">[ Showing '+num_entries+' of '+feed.entries.length+' total entries]</span>\n';
     }
-    html += '<br /><span id="authorid_hook" style="font-size:80%; padding-left:0px">[ This list is powered by an <a href="http://arxiv.org/a/'+arxiv_authorid + '">arXiv author id</a> and the <a href="http://arxiv.org/help/myarticles">myarticles</a> widget ]</span>';
+    html += '<br /><span id="authorid_hook" style="font-size:80%; padding-left:0px">[ This list is powered by an <a href="https://arxiv.org/a/'+arxiv_authorid + '">arXiv author id</a> and the <a href="https://arxiv.org/help/myarticles">myarticles</a> widget ]</span>';
     //close the arxiv container div
     html += '</dl>\n</div>\n'
     document.getElementById('arxivfeed').innerHTML=html;
@@ -227,9 +227,9 @@ function makePrettyarXiv(feed)
 		html +="</div>";
 	}
 	//Add a foooter div to hold the "powered by" link.
-	//html += '<div id="feedtitle" style="font-size:10px; padding-top:5px; padding-bottom:5px; text-align:center;">Powered by the arXiv.org <a href="http://arxiv.org/help/myarticles">myarticles</a> widget</div>';
+	//html += '<div id="feedtitle" style="font-size:10px; padding-top:5px; padding-bottom:5px; text-align:center;">Powered by the arXiv.org <a href="https://arxiv.org/help/myarticles">myarticles</a> widget</div>';
 	html += '<div id="feedtitle" style="text-align:center; font-size:9px">';
-	html += '<a href="http://arxiv.org/help/myarticles">myarticles</a> is powered <a href="http://arxiv.org/a/'+arxiv_authorid + '">arXiv author id</a> data';
+	html += '<a href="https://arxiv.org/help/myarticles">myarticles</a> is powered <a href="https://arxiv.org/a/'+arxiv_authorid + '">arXiv author id</a> data';
 	html +='</div>';
 	//End the container div
 	html += "</div>"
