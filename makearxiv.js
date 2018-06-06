@@ -37,9 +37,7 @@ if (typeof arxiv_authorid === 'undefined') {
 }
 newScript.src = urlPrefix + arxiv_authorid + '.js';
 
-
 headID.appendChild(newScript);
-
 
 function manageDefaults()
 {
@@ -188,6 +186,7 @@ function makearXiv(feed)
     //close the arxiv container div
     html += '</dl>\n</div>\n'
     document.getElementById('arxivfeed').innerHTML=html;
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 }
 
 function makePrettyarXiv(feed)
