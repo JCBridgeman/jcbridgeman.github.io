@@ -100,7 +100,7 @@ function makearXiv(feed)
 {
     var x = 0;
     //Much of this style is taken from https://arxiv.org/arXiv.css
-    var html = '<div id="arxivcontainer" style="font-family:Lucida Grande,helvetica, arial, verdana,sans-serif;margin:.7em;font-size:90%">\n';
+    var html = '<div id="arxivcontainer" style="font-family:Lucida Grande,helvetica, arial, verdana,sans-serif;margin:.7em;font-size:50%">\n';
     var format_name = '';
     //If title, add as an h3, similar to the arxiv.org/list/*subject*/new
     if (arxiv_includeTitle !== 0) {
@@ -178,9 +178,9 @@ function makearXiv(feed)
 	    html += '\t</div>\n</dd>';
     }
     if (extra_entries) {
-	    html +='<br /><span style="font-size:80%">[ Showing '+num_entries+' of '+feed.entries.length+' total entries, additional <a href="https://arxiv.org/a/'+arxiv_authorid+'">'+(feed.entries.length-num_entries)+'</a> entries available at arXiv.org ]</span>';
+	    html +='<br /><span style="font-size:40%">[ Showing '+num_entries+' of '+feed.entries.length+' total entries, additional <a href="https://arxiv.org/a/'+arxiv_authorid+'">'+(feed.entries.length-num_entries)+'</a> entries available at arXiv.org ]</span>';
     } else {
-	    html +='<br /><span style="font-size:80%">[ Showing '+num_entries+' of '+feed.entries.length+' total entries]</span>\n';
+	    html +='<br /><span style="font-size:40%">[ Showing '+num_entries+' of '+feed.entries.length+' total entries]</span>\n';
     }
     html += '<br /><span id="authorid_hook" style="font-size:80%; padding-left:0px">[ This list is powered by an <a href="https://arxiv.org/a/'+arxiv_authorid + '">arXiv author id</a> and the <a href="https://arxiv.org/help/myarticles">myarticles</a> widget ]</span>';
     //close the arxiv container div
@@ -192,7 +192,7 @@ function makearXiv(feed)
 function makePrettyarXiv(feed)
 {
 	//First add the feed title inside of a div
-	var html = '<div id="arxivcontainer" style="width:250px; border:solid 1px #' + arxiv_border_color+';font-family:sans-serif;font-size:10px; background-color:#' + arxiv_bg_color +';">';
+	var html = '<div id="arxivcontainer" style="width:250px; border:solid 1px #' + arxiv_border_color+';font-family:sans-serif;font-size:7px; background-color:#' + arxiv_bg_color +';">';
 	if (arxiv_includeTitle == 1) {
 		html += '<div id="feedtitle" style="font-size:14px; padding-top:5px; padding-bottom:5px; text-align:center;">';
 		//Title has an &apos; in it which won't display correctly on some browsers (IE being 
