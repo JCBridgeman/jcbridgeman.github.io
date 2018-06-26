@@ -100,7 +100,7 @@ function makearXiv(feed)
 {
     var x = 0;
     //Much of this style is taken from https://arxiv.org/arXiv.css
-    var html = '<div id="arxivcontainer" style="font-family:Lucida Grande,helvetica, arial, verdana,sans-serif;margin:.7em;font-size:50%">\n';
+    var html = '<div id="arxivcontainer" style="font-family:Lucida Grande,helvetica, arial, verdana,sans-serif;margin:.7em;font-size:75%">\n';
     var format_name = '';
     //If title, add as an h3, similar to the arxiv.org/list/*subject*/new
     if (arxiv_includeTitle !== 0) {
@@ -227,7 +227,7 @@ function makePrettyarXiv(feed)
 	}
 	//Add a foooter div to hold the "powered by" link.
 	//html += '<div id="feedtitle" style="font-size:10px; padding-top:5px; padding-bottom:5px; text-align:center;">Powered by the arXiv.org <a href="https://arxiv.org/help/myarticles">myarticles</a> widget</div>';
-	html += '<div id="feedtitle" style="text-align:center; font-size:9px">';
+	html += '<div id="feedtitle" style="text-align:center; font-size:12px">';
 	html += '<a href="https://arxiv.org/help/myarticles">myarticles</a> is powered <a href="https://arxiv.org/a/'+arxiv_authorid + '">arXiv author id</a> data';
 	html +='</div>';
 	//End the container div
