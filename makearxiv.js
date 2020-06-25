@@ -132,18 +132,12 @@ function makearXiv(feed) {
   for (x = 0; x < num_entries; x++) {
     //Add the numeral in brackets with a space
     html += '<dt>[' + (x + 1) + ']&nbsp\n';
-    //add a span with the ref to the id in it
-    html += '\t<span class="list-identifier" style="font-weight:bold"><a href="' + feed.entries[x].id + '" title="Abstract">' + feed.entries[x].id + '</a> [';
-    //now add the formats listed in the dictioary at feed.entries[x].formats
-    for (format_name in feed.entries[x].formats) {
-      if (feed.entries[x].formats.hasOwnProperty(format_name)) {
-        var format_value = feed.entries[x].formats[format_name]
-        html += '<a href="' + format_value +
-          '" title="Download' + format_name + '"> ' + format_name + '</a> ';
-      }
-    }
+    // add a span with the ref to the id in it
+    var idnum = feed.entries[x].id.match(/\/abs\/([^v]*)(.*)/);
+    html += '\t<span class="list-identifier" style="font-weight:bold"><a href="' + feed.entries[x].id + '" title="Abstract">' + idnum[1] + '</a> | ';
+    html += '<a href="' + feed.entries[x].formats['pdf'] + '"title="Download ' + 'pdf' + '"> ' + 'pdf' + '</a> ';
     //Close the list of formats with the vrack and span
-    html += "]</span>\n</dt>\n";
+    html += "</span>\n</dt>\n";
     //open a set of divs to contain the various fields
     html += '<dd style="padding-bottom:1em;">\n\t<div class="meta" style="line-height:130%;">\n\t\t<div class="list-title" style="font-size:large;font-weight:bold;margin:0.25em 0 0 0;line-height:120%">\n'
     //Add the title in a span
