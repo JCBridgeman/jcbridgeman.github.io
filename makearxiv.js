@@ -97,6 +97,16 @@ function jsonarXivFeed(feed) {
     document.getElementById('arxivfeed').innerHTML = html;
     return 1;
   }
+
+  feed.entries.sort(function(x, y) {
+    if (x['published'] < y['published']) {
+      return 1
+    } else if (x['published'] > y['published']) {
+      return -1
+    }
+    return 0
+  })
+
   //Switch based on the format type we're going after.
   if (arxiv_format === 'pretty') {
     makePrettyarXiv(feed);
@@ -190,44 +200,44 @@ function makearXiv(feed) {
   MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 }
 
-function makePrettyarXiv(feed) {
-  //First add the feed title inside of a div
-  var html = '<div id="arxivcontainer" style="width:250px; border:solid 1px #' + arxiv_border_color + ';font-family:sans-serif;font-size:7px; background-color:#' + arxiv_bg_color + ';">';
-  if (arxiv_includeTitle == 1) {
-    html += '<div id="feedtitle" style="font-size:14px; padding-top:5px; padding-bottom:5px; text-align:center;">';
-    //Title has an &apos; in it which won't display correctly on some browsers (IE being
-    //the prime culprit this time), use htmlFix to fix that.
-    html += htmlFix(feed.title) + '';
-    html += '</div>';
-  }
-
-  //Add each entry
-  if (arxiv_max_entries == 0) {
-    num_entries = feed.entries.length;
-  } else if (arxiv_max_entries > feed.entries.length) {
-    num_entries = feed.entries.length;
-  } else {
-    num_entries = arxiv_max_entries;
-  }
-  for (x = 0; x < num_entries; x++) {
-    //First add the title-link element as a entrytitle div
-    html += '<div class="entry" style="padding-left:6px;width:244px;background-color:#' + arxiv_entry_color + '">';
-    //Title and authors
-    html += '<div class="entrytitle"><a href="' + feed.entries[x].id + '">' + feed.entries[x].title + '</a></div>';
-    html += '<div class="entryauthors" style="margin-left:0.6em">' + feed.entries[x].authors + '</div>';
-    //add summary only if desired
-    if (arxiv_includeSummary == 1) {
-      html += '<div class="entrysummary" style="margin-left:0.6em">' + feed.entries[x].summary + '</div>';
-    }
-    //end the entry div
-    html += "</div>";
-  }
-  //Add a foooter div to hold the "powered by" link.
-  //html += '<div id="feedtitle" style="font-size:10px; padding-top:5px; padding-bottom:5px; text-align:center;">Powered by the arXiv.org <a href="https://arxiv.org/help/myarticles">myarticles</a> widget</div>';
-  html += '<div id="feedtitle" style="text-align:center; font-size:12px">';
-  html += '<a href="https://arxiv.org/help/myarticles">myarticles</a> is powered <a href="https://arxiv.org/a/' + arxiv_authorid + '">arXiv author id</a> data';
-  html += '</div>';
-  //End the container div
-  html += "</div>"
-  document.getElementById('arxivfeed').innerHTML = html;
-}
+// function makePrettyarXiv(feed) {
+//   //First add the feed title inside of a div
+//   var html = '<div id="arxivcontainer" style="width:250px; border:solid 1px #' + arxiv_border_color + ';font-family:sans-serif;font-size:7px; background-color:#' + arxiv_bg_color + ';">';
+//   if (arxiv_includeTitle == 1) {
+//     html += '<div id="feedtitle" style="font-size:14px; padding-top:5px; padding-bottom:5px; text-align:center;">';
+//     //Title has an &apos; in it which won't display correctly on some browsers (IE being
+//     //the prime culprit this time), use htmlFix to fix that.
+//     html += htmlFix(feed.title) + '';
+//     html += '</div>';
+//   }
+//
+//   //Add each entry
+//   if (arxiv_max_entries == 0) {
+//     num_entries = feed.entries.length;
+//   } else if (arxiv_max_entries > feed.entries.length) {
+//     num_entries = feed.entries.length;
+//   } else {
+//     num_entries = arxiv_max_entries;
+//   }
+//   for (x = 0; x < num_entries; x++) {
+//     //First add the title-link element as a entrytitle div
+//     html += '<div class="entry" style="padding-left:6px;width:244px;background-color:#' + arxiv_entry_color + '">';
+//     //Title and authors
+//     html += '<div class="entrytitle"><a href="' + feed.entries[x].id + '">' + feed.entries[x].title + '</a></div>';
+//     html += '<div class="entryauthors" style="margin-left:0.6em">' + feed.entries[x].authors + '</div>';
+//     //add summary only if desired
+//     if (arxiv_includeSummary == 1) {
+//       html += '<div class="entrysummary" style="margin-left:0.6em">' + feed.entries[x].summary + '</div>';
+//     }
+//     //end the entry div
+//     html += "</div>";
+//   }
+//   //Add a foooter div to hold the "powered by" link.
+//   //html += '<div id="feedtitle" style="font-size:10px; padding-top:5px; padding-bottom:5px; text-align:center;">Powered by the arXiv.org <a href="https://arxiv.org/help/myarticles">myarticles</a> widget</div>';
+//   html += '<div id="feedtitle" style="text-align:center; font-size:12px">';
+//   html += '<a href="https://arxiv.org/help/myarticles">myarticles</a> is powered <a href="https://arxiv.org/a/' + arxiv_authorid + '">arXiv author id</a> data';
+//   html += '</div>';
+//   //End the container div
+//   html += "</div>"
+//   document.getElementById('arxivfeed').innerHTML = html;
+// }
