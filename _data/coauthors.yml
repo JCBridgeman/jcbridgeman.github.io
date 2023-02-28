@@ -1,0 +1,71 @@
+"Barter":
+  - firstname: ["Daniel", "D."]
+    url: https://danielbarter.github.io/
+
+"Bartlett":
+  - firstname: ["Stephen D.", "S.D."]
+    url: https://www.sydney.edu.au/science/about/our-people/academic-staff/stephen-bartlett.html
+
+"Brown":
+  - firstname: ["Benjamin J.", "B.J."]
+    url: https://scholar.google.com/citations?user=25TjBooAAAAJ&hl=en
+
+"Chubb":
+  - firstname: ["Christopher T.", "C.T."]
+    url: https://christopherchubb.com/
+
+"Dewolf":
+  - firstname: ["Nicolas" ,"N."]
+    url: https://kermit.ugent.be/phd.php?author=N.%20Dewolf
+
+"Doherty":
+  - firstname: ["Andrew C.","A.C."]
+    url: https://www.sydney.edu.au/science/about/our-people/academic-staff/andrew-doherty.html
+
+"Elman":
+  - firstname: ["Samuel J.","S.J."]
+    url: https://scholar.google.com.au/citations?user=HYFhdhIAAAAJ&hl=en
+
+"Flammia":
+  - firstname: ["Steven T.","S.T."]
+    url: https://www.amazon.science/author/steven-t-flammia
+
+"Haegeman":
+  - firstname: ["Jutho", "J."]
+    url: https://jutho.github.io/
+
+"Hahn":
+  - firstname: ["Alexander", "A."]
+    url: https://scholar.google.com/citations?user=ns9tsf8AAAAJ&hl=fr
+
+"Jones":
+  - firstname: ["Corey", "C."]
+    url: https://www.coreyjonesmath.com/
+
+"Lootens":
+  - firstname: ["Laurens", "L."]
+    url: https://scholar.google.com/citations?user=AriTElQAAAAJ&hl=en
+
+"Osborne":
+  - firstname: ["Tobias J.", "T.J."]
+    url: https://www.tobiasosborne.org/
+
+"Poulin":
+  - firstname: ["David", "D."]
+    url: https://scholar.google.com/citations?user=xO066hMAAAAJ&hl=en
+
+"Cuiper":
+  - firstname: ["Bram Vancraeynest-De", "B. Vancraeynest-De", "B.V.-D."]
+    url: https://orcid.org/0000-0003-0080-2030
+
+"Verstraete":
+  - firstname: ["Frank", "F."]
+    url: https://quantumghent.github.io/
+
+"Williamson":
+  - firstname: ["Dominic J.", "D.J."]
+    url: https://sites.google.com/site/dominicjw/home
+
+"Wolf":
+  - firstname: ["Ramona", "R."]
+    url: https://ramonawolf.com/

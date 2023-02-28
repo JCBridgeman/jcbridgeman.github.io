@@ -1,0 +1,164 @@
+# date_sep –
+
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Jacob C Bridgman
+
+- title: Employment
+  type: time_table
+  contents:
+    - title: Senior postdoctoral fellow
+      institution: Research Foundation–Flanders
+      year: 2022 – today
+      description:
+        - hosted by Ghent University. Grant number 12E9223N
+
+    - title: Postdoctoral Researcher
+      institution: Ghent University
+      year: 2021 – 2022
+
+    - title: Postdoctoral Researcher
+      institution: Perimeter Institute for Theoretical Physics
+      year: 2018 – 2021
+
+    - title: Research Associate
+      institution: University of Technology Sydney
+      year: 2018
+
+    - title: Postdoctoral Fellow
+      institution: University of Sydney
+      year: 2017
+
+    - title: Postgraduate Student
+      institution: University of Sydney
+      year: 2013 – 2017
+
+    - title: Casual Tutor
+      institution: University of Sydney
+      year: 2013 – 2017
+      description:
+        - Assisting in experimental and computational labs. Marking of assignments and exams.
+
+- title: Education
+  type: time_table
+  contents:
+    - degreeType: Doctor of Philosophy in Physics
+      thesis_title: Tensor Network Methods for Quantum Phases
+      institution: The University of Sydney, Australia
+      year: 2014 – 2017
+      advisor: Prof. Stephen D. Bartlett, with auxiliary supervisors Prof. Andrew C. Doherty and A/Prof. Steven T. Flammia
+
+    - degreeType: Master of Science in Physics | Perimeter Scholars International
+      thesis_title: Eﬀective Edge States of Symmetry Protected Topological Systems
+      institution: "University of Waterloo & Perimeter Institute for Theoretical Physics"
+      year: 2013 – 2014
+      advisor: Dr Luiz H. Santos and Juven C. Wang
+
+    - degreeType: Bachelor of Science (Advanced Mathematics)
+      thesis_title: Critical Quantum Lattice Models using the Multiscale Entanglement Renormalisation Ansatz
+      institution: The University of Sydney, Australia
+      advisor: Prof. Stephen D. Bartlett and A/Prof. Andrew C. Doherty
+      year: 2008 – 2012
+      comments:
+        - Double majors in physics and pure mathematics
+        - Completed with First Class Honours and the University Medal
+
+    # - degreeType: Senior special project
+    #   title: Scaling dimensions and local primary fields of critical quantum Ashkin-Teller spin chain using MERA
+    #   institution: The University of Sydney, Australia
+    #   advisor: Prof. Stephen D. Bartlett and A/Prof. Andrew C. Doherty
+    #   year: 2011
+    #
+    # - degreeType: School of Physics Summer Vacation Project
+    #   title: Symmetries in tensor networks
+    #   institution: The University of Sydney, Australia
+    #   advisor: Prof. Stephen D. Bartlett and A/Prof. Andrew C. Doherty
+    #   year: 2011 – 2012
+    #
+    # - degreeType: School of Physics Summer Vacation Project
+    #   title: Quantum state and measurement tomography using convex optimisation
+    #   institution: The University of Sydney, Australia
+    #   advisor: Prof. Stephen D. Bartlett and A/Prof. Andrew C. Doherty
+    #   year: 2010 – 2011
+
+- title: Scholarships and Awards
+  type: time_table
+  contents:
+    - year: 2012 – 2017
+      items:
+        - "<b>Australian Postgraduate Award</b>: awarded to enable students to pursue a higher research degree"
+        - "<b>University of Sydney Merit Award</b>: offered to the most highly ranked APA applicants"
+    - year: 2013
+      items:
+        - Perimeter Scholars International Scholarship
+        - The School of Physics Summer Vacation Scholarship 2012-2013
+    - year: 2012
+      items:
+        - The University Medal
+    - year: 2011
+      items:
+        - The University of Sydney Honours Scholarship 2012
+        - The Science Foundation for Physics Scholarship for Third Year
+        - The School of Physics Summer Vacation Scholarship 2011-2012
+    - year: 2010
+      items:
+        - The Science Foundation for Physics Scholarship for Second Year
+        - The School of Physics Summer Vacation Scholarship 2010-2011
+    - year: 2008
+      items:
+        - "<b>School Dux</b>: first in school"
+
+- title: Students
+  type: nested_list
+  contents:
+    - title: Undergradiate
+      items:
+        - <b>Eric Huang</b>, USyd, Auxiliary supervisor for Talented Students Programme project
+    - title: Masters
+      items:
+        - <b>Kevin Vervoort</b>, UGent, Supervisor&#58 <a href="https://lib.ugent.be/catalog/rug01:003059937">Topological Wormholes in Tensor Networks</a>
+
+- title: Service to the community
+  type: nested_list
+  contents:
+    - title: Conference organization
+      items:
+        - <b>2023 <a href="https://qip2023.ugent.be/">Quantum Information Processing 2023</a></b>&#58 Co-chair and primary local organizer
+        - <b>2022 <a href="https://aimath.org/pastworkshops/highercattopord.html">American Institute of Mathematics Workshop</a></b>&#58 <b>Higher categories and topological order</b>, with Tobias Osborne, David Penneys, and Julia Plavnik
+        - <b>2022 <a href="https://aimath.org/pastworkshops/fusiontensorV.html">American Institute of Mathematics Workshop</a></b>&#58 <b>Fusion categories and tensor networks</b>, with Tobias Osborne, David Penneys, and Julia Plavnik
+    - title: Refereeing
+      items:
+        - <b>Journals</b> Physica A&#58 Statistical Mechanics and its Applications, Physical Review {A, B, X, Letters}, Quantum, SciPost Physics
+        - <b>Conferences</b> QIP {2018, 2021, 2022}, TQC {2018, 2020}, QTurn2020
+        - <b>Books</b> Oxford University Press
+        - <b>Grants</b> NSERC (Canada)
+
+- title: Referees
+  type: nested_list
+  contents:
+    - title: Prof. Stephen D. Bartlett
+      items:
+        - School of Physics, The University of Sydney, NSW 2006, Australia
+        - <a href="mailto:stephen.bartlett@sydney.edu.au">stephen.bartlett@sydney.edu.au</a>
+    - title: Prof. Andrew C. Doherty
+      items:
+        - School of Physics, The University of Sydney, NSW 2006, Australia
+        - <a href="mailto:andrew.doherty@sydney.edu.au">andrew.doherty@sydney.edu.au</a>
+    - title: Prof. Steven T. Flammia
+      items:
+        - AWS Center for Quantum Computing, Pasadena, CA 91125, USA
+        - <a href="mailto:sflammi@amazon.com">sflammi@amazon.com</a>
+    - title: Asst. Prof. Corey Jones
+      items:
+        - Department of Mathematics, North Carolina State University, NC, USA
+        - <a href="mailto:cmjones6@ncsu.edu">cmjones6@ncsu.edu</a>
+    - title: Prof. Tobias J. Osborne
+      items:
+        - Institüt für Theoretische Physik, Leibniz Universität Hannover
+        - <a href="mailto:tobias.j.osborne@gmail.com">tobias.j.osborne@gmail.com</a>
+    - title: Prof. Frank Verstraete
+      items:
+        - "DAMTP, University of Cambridge, UK & Ghent University, Belgium"
+        - <a href="mailto:Frank.Verstraete@UGent.be">Frank.Verstraete@UGent.be</a>
