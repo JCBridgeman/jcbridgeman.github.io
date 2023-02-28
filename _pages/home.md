@@ -28,4 +28,4 @@ I completed my PhD at the [University of Sydney, with Stephen Bartlett, Andrew D
 
 [University of Sydney, with Stephen Bartlett, Andrew Doherty and Steve Flammia]:https://quantum.sydney.edu.au/research/qtg/
 [Perimeter Institute]: https://perimeterinstitute.ca/
-[here]: {{ /cv/ | relative_url }}
+[here]: https://jcbridgeman.github.io/cv/
