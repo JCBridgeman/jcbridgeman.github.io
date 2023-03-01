@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jcbridgeman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jcbridgeman.github.io
+  * I am jcbridgeman (https://keybase.io/jcbridgeman) on keybase.
+  * I have a public key ASDvCD2v0etPYb6F9VTNbqDfgaD73JDEO3UobZgZj3iWpQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ef083dafd1eb4f61be85f554cd6ea0df81a0fbdc90c43b75286d98198f7896a50a",
+      "host": "keybase.io",
+      "kid": "0120ef083dafd1eb4f61be85f554cd6ea0df81a0fbdc90c43b75286d98198f7896a50a",
+      "uid": "7313d634c17904806d855a4e5e7bbc19",
+      "username": "jcbridgeman"
+    },
+    "merkle_root": {
+      "ctime": 1677699370,
+      "hash": "9c7168dc397fab6b813246180717aaf083f292233f18eb022b89912c645f09a22c8fd16b4abe808ed84d497ecfc80eb9fe7c380e6e4e0195c21974ed37dfc80e",
+      "hash_meta": "5a6d56fe8247bef27a073f2423991b3c4efe27e7645a11134cd7effb57ad5c8c",
+      "seqno": 24130337
+    },
+    "service": {
+      "entropy": "3HlItX5vV0PUk4F+Z83imGyP",
+      "hostname": "jcbridgeman.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.2"
+  },
+  "ctime": 1677699431,
+  "expire_in": 504576000,
+  "prev": "02136808b5cd6307cb9e703eeda771624f6e9b8310d88956d1846eab0f1fb515",
+  "seqno": 31,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7wg9r9HrT2G+hfVUzW6g34Gg+9yQxDt1KG2YGY94lqUKp3BheWxvYWTESpcCH8QgAhNoCLXNYwfLnnA+7adxYk9um4MQ2IlW0YRuqw8ftRXEIIkQc/dpNITLTgBKc4Wa1AMqFL2tBO5O3SSYsLGES4X5AgHCo3NpZ8RAX+Uhf+h9+iq385ldELQHpPXd0i0d/EEJRSlC1dfOVJP1TOIdJDUqGPy3PWQMH9CTqSwdNbKZLNzfoqtSJ55CCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINlXQ2oLU4I0KcZKufjSfBdqDKM6GyxeBD+NMm4DGQ/qo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jcbridgeman
+
+==================================================================
