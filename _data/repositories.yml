@@ -2,7 +2,9 @@ github_users:
   - JCBridgeman
 
 github_repos:
+  - JCBridgeman/smallRankUnitaryFusion
   - JCBridgeman/UnitarySphericalFusionData
   - JCBridgeman/UnitaryPremodularCategoryData
   - JCBridgeman/FSymbolsFromModules
   - JCBridgeman/skeletalData_Bimodule_VecG
+  - MikeVasmer/qudit-single-shot

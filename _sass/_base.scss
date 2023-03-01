@@ -477,7 +477,19 @@ footer.sticky-bottom {
 
 // Publications
 
-.publications {
+.publications-cited{
+  ol.bibliography{
+  }
+}
+
+.publications{
+  ol.bibliography{
+    list-style: none;
+  }
+}
+
+.publications, .publications-cited {
+
   margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
@@ -530,8 +542,9 @@ footer.sticky-bottom {
     }
   }
 
+
   ol.bibliography {
-    list-style: none;
+
     padding: 0;
     margin-top: 0;
 

@@ -9,7 +9,6 @@ layout: default
       </span>{%endif%}</h1>
     <p class="post-description">{{ page.description }}</p>
 
-
     {% if page.arXiv or page.doi %}
     <div class="publications">
       {% bibliography --template short-bib --group_by none -f papers -q @*[eprint={{page.arXiv}}] %}
