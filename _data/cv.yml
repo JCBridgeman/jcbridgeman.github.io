@@ -5,6 +5,8 @@
   contents:
     - name: Full Name
       value: Jacob C Bridgman
+    - name: Email address
+      value: <a href="mailto:jcbridgeman1@gmail.com">jcbridgeman1@gmail.com</a>
 
 - title: Employment
   type: time_table
