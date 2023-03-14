@@ -138,13 +138,13 @@
     {%- endcapture -%}
     {% else %}
     {% if entry.journal -%}{%- capture journalref -%}
-    {% if entry.doi %}
+    {%- if entry.doi -%}
     <a href="https://dx.doi.org/{{ entry.doi }}">
       {{entry.journal}}, <b>{{entry.volume}}</b>, {{entry.pages}}</a>
-    {% elsif entry.accepted !=blank %}
+    {%- elsif entry.accepted !=blank -%}
     <a href="{{ entry.accepted }}">
       {{entry.journal}}</a>, accepted
-    {% endif %}
+    {%- endif -%}
     {%- endcapture -%}
     {% else %}
     {%- capture journalref -%}
