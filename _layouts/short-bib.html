@@ -104,8 +104,8 @@
 
     </div>
 
-    {%- if entry.recognition %}
     {%- capture recognition -%}
+    {%- if entry.recognition %}
     <ul><li class="recognition"><i>
     {% if entry.recognition_link %}
     <a href="{{ entry.recognition_link }}">{{ entry.recognition }}</a>
@@ -113,8 +113,8 @@
     {{entry.recognition}}
     {% endif %}
     </i></li></ul>
-    {%- endcapture -%}
     {%- endif %}
+    {%- endcapture -%}
 
     {% if entry.journal -%}{%- capture entrytype -%}
     <a href="https://dx.doi.org/{{ entry.doi }}">

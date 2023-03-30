@@ -113,8 +113,9 @@
 
     </div>
 
-    {%- if entry.recognition %}
     {%- capture recognition -%}
+
+    {%- if entry.recognition %}
     <ul>
       <li class="recognition"><i>
           {% if entry.recognition_link %}
@@ -124,8 +125,8 @@
           {% endif %}
         </i></li>
     </ul>
-    {%- endcapture -%}
     {%- endif %}
+    {%- endcapture -%}
 
     {% assign thesis = "thesis,honoursthesis,mastersthesis,phdthesis" | split: ','%}
     {% if thesis contains entry.type %}
