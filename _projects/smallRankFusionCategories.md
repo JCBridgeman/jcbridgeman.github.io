@@ -2,7 +2,7 @@
 layout: project
 title: small rank fusion categories
 description: Computing/cataloging associator and braiding data for (multiplicity free) fusion categories of small rank
-img: /assets/img/F.png
+img: /assets/img/project_thumbs/F.png
 importance: 1
 category: work in progress
 github: https://github.com/JCBridgeman/smallRankUnitaryFusionData
@@ -14,10 +14,3 @@ Many properties of fusion categories, for example unitarity, can be deduced from
 In this on-going projects, we are compiling such data. For all multiplicity-free, unitary fusion categories of <nobr>rank ⩽6</nobr>, the data can be found <a href="https://github.com/JCBridgeman/smallRankUnitaryFusionData" title="smallRankUnitaryFusionData">here: <i class="fab fa-github"></i></a>.
 
 When the categories admit braidings, all braidings are included (up to equivalence).
-
----
-
-<div class="publications-cited">
-{% bibliography --template cite-bib --cited --group_by none %}
-</div>
----

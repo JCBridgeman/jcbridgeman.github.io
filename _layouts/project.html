@@ -14,13 +14,15 @@ layout: default
       {% bibliography --template short-bib --group_by none -f papers -q @*[eprint={{page.arXiv}}] %}
     </div>
     {% endif %}
-
   </header>
-
-
+  
   <article>
     <hr>
     {{ content }}
+
+    <div class="publications-cited">
+      {% include cited.html %}
+    </div>
   </article>
 
 </div>

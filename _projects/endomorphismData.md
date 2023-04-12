@@ -2,7 +2,7 @@
 layout: page
 title: Endofunctor categories
 description: Computing the data of endofunctor categories via tube algebras
-img: /assets/img/H3.png
+img: /assets/img/project_thumbs/H3.png
 importance: 1
 category: completed
 arXiv: 2110.03644

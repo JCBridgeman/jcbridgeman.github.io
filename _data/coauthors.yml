@@ -42,6 +42,10 @@
   - firstname: ["Corey", "C."]
     url: https://www.coreyjonesmath.com/
 
+"Kubica":
+  - firstname: ["Aleksander", "Aleks", "A."]
+    url: https://scholar.google.com/citations?hl=en&user=D8VDo7YAAAAJ&view_op=list_works&sortby=pubdate
+
 "Lootens":
   - firstname: ["Laurens", "L."]
     url: https://scholar.google.com/citations?user=AriTElQAAAAJ&hl=en
@@ -57,6 +61,10 @@
 "Cuiper":
   - firstname: ["Bram Vancraeynest-De", "B. Vancraeynest-De", "B.V.-D."]
     url: https://orcid.org/0000-0003-0080-2030
+
+"Vasmer":
+  - firstname: ["Mike", "Michael", "M."]
+    url: https://mikevasmer.github.io/
 
 "Verstraete":
   - firstname: ["Frank", "F."]

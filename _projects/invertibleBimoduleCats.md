@@ -2,7 +2,7 @@
 layout: project
 title: invertible bimodule categories
 description: A simple, checkable critereon for determining when a given bimodule category is invertible
-img: /assets/img/associatorCMD.png
+img: /assets/img/project_thumbs/associatorCMD.png
 importance: 1
 category: completed
 arXiv: 2211.01947
