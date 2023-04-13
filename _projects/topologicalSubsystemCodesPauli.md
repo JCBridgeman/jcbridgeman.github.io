@@ -16,13 +16,13 @@ Real-world applications of quantum error correction will have to deal with fault
 One may attempt to negate the effects of measurement errors by repeating the syndrome measurements many times to gain confidence in the results {%- cite Campbell2019 -f citations %}. Unfortunately, the number of measurement rounds typically scales with the code size. This leads to a large overhead in measurement time.
 
 
-Topological subsystem codes{%- cite Bombin2015 Kubica2022 -f citations %} provide an alternative mechanism to mitigate measurement errors, via the property known as *single-shot correctibility*. This allows for correction of the measurement errors with a constant number of measurement rounds.
+Topological subsystem codes{%- cite Bombin2015 Kubica2022 -f citations %} provide an alternative mechanism to mitigate measurement errors, via the property known as *single-shot correctability*. This allows for correction of the measurement errors with a constant number of measurement rounds.
 
 In this work, we provide a new perspective on the subsystem Toric code of Ref. {%- cite Kubica2022 -f citations %}. By focusing on the relations, rather than the stabilizer operators,  we are able to provide a family of natural generalization. As input, these take 2-dimensional quantum double codes. From this perspective, the single-shot property arises from the topological order of the 2D code.
 
 In addition, this perspective allows us to provide an argument that the most natural Hamiltonians associated to these 3D codes are gapless.
-
-<!-- <div align="center">
+<!-- 
+<div align="center">
   <img src="/assets/img/ZdCodeThreshold.png" width="50%" />
   <br>
   <br>
