@@ -5,7 +5,7 @@ description: Understanding the physical origins of single-shot error correctabil
 img: /assets/img/project_thumbs/Tetrahedra.png
 importance: 1
 category: completed
-arXiv: 2305.XXXXX
+arXiv: 2305.06365
 github: https://mikevasmer.github.io/qudit-single-shot/
 publish: true
 ---
