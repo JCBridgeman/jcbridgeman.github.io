@@ -115,7 +115,7 @@
 - title: Students
   type: nested_list
   contents:
-    - title: Undergradiate
+    - title: Undergraduate
       items:
         - <b>Eric Huang</b>, USyd, Auxiliary supervisor for Talented Students Programme project
     - title: Masters
