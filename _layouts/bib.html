@@ -5,32 +5,53 @@
 
   <div class="col-sm-2 {% if entry.abbr %}abbr{% elsif entry.preview %}preview{% else %}abbr{% endif %}">
     {%- if entry.abbr -%}
-    {%- if site.data.venues[entry.abbr] -%}
     {%- assign venue_style = nil -%}
-    {%- if site.data.venues[entry.abbr].color != blank -%}
-    {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
-    {%- if site.data.venues[entry.abbr].text-color != blank -%}
-    {%- assign venue_style_text = site.data.venues[entry.abbr].text-color | prepend: 'style="color:' | append: '"' -%}
-    {%- endif -%}
-    {%- endif -%}
-    <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}>
-      {% if entry.doi or entry.accepted %}
-      <a href="{%if entry.doi %}https://dx.doi.org/{{entry.doi}}{% elsif entry.accepted %}{{entry.accepted}}{% endif %}" {% if venue_style_text %}{{venue_style_text}}{% endif %}>{{entry.abbr}}</a>
-      {% else %}
-      {{entry.abbr}}
-      {% endif %}
-    </abbr>
-    {%- else -%}
-    <abbr class="badge">{{entry.abbr}}</abbr>
-    {%- endif -%}
+      {%- if site.data.venues[entry.abbr] -%}
+        {% capture venue_style %}
+        style="
+          {%- if site.data.venues[entry.abbr].color != blank -%}
+            {{- site.data.venues[entry.abbr].color | prepend: 'background-color:' | append: '; ' -}}
+          {%- endif -%}
+          {%- if site.data.venues[entry.abbr].border-color != blank -%}
+            {{- site.data.venues[entry.abbr].border-color | prepend: 'border:1px solid; border-color:' | append: '; ' -}}
+          {%- endif -%}
+          {%- if site.data.venues[entry.abbr].text-color != blank -%}
+            {{- site.data.venues[entry.abbr].text-color | prepend: 'color:' | append: '!important; ' -}}
+          {%- endif -%}
+        "
+        {% endcapture %}
+      {%- endif -%}
+      <abbr class="badge badge-pill" {% if venue_style %}{{venue_style}}{% endif %}>
+        {%- assign link_address = nil -%}
+        {% if entry.doi or entry.accepted %}
+        {%- capture link_address -%}
+          {%- if entry.doi -%}
+            https://dx.doi.org/{{entry.doi}}
+          {%- elsif entry.accepted -%}
+            {%- if entry.accepted == "." -%}
+              {%- if site.data.venues[entry.abbr].url != blank -%}
+                {{- site.data.venues[entry.abbr].url -}}
+              {%- endif -%}
+            {%- else -%}
+              {{entry.accepted}}
+            {%- endif -%}
+          {%- endif -%}
+        {% endcapture %}
+        {%- endif -%}
+        {%- if link_address == blank -%}
+          {{entry.abbr}}
+        {% else %}
+          <a href="{{link_address}}">{{entry.abbr}}</a>
+        {% endif %}
+      </abbr>
     {%- elsif entry.preview -%}
-    <div class="col-sm-2 preview">
-      {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
-      {% include figure.html
-        path=entry_path
-        class="preview z-depth-1 rounded"
-        alt=entry.preview -%}
-    </div>
+      <div class="col-sm-2 preview">
+        {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
+        {% include figure.html
+          path=entry_path
+          class="preview z-depth-1 rounded"
+          alt=entry.preview -%}
+      </div>
     {%- endif -%}
   </div>
 
@@ -144,7 +165,7 @@
       {{entry.journal}}, <b>{{entry.volume}}</b>, {{entry.pages}}</a>
     {%- elsif entry.accepted !=blank -%}
     <a href="{{ entry.accepted }}">
-      {{entry.journal}}</a>, accepted
+      {{entry.journal}}</a>, in press
     {%- endif -%}
     {%- endcapture -%}
     {% else %}

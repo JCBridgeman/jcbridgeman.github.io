@@ -18,6 +18,12 @@
   color: "#ba0c2f"
   text-color: "white"
 
+"PRX Quantum":
+  url: https://www.springer.com/journal/220
+  color: "black"
+  text-color: "white"
+  border-color: "white"
+
 "Quantum":
   url: https://quantum-journal.org/
   color: "#53257f"

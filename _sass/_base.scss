@@ -509,7 +509,7 @@ footer.sticky-bottom {
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
-    margin-bottom: -2rem;
+    margin-left:-2rem;
     text-align: right;
   }
   h2.bibliography {
@@ -565,13 +565,15 @@ footer.sticky-bottom {
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
+        margin-right: 1.5rem;
         abbr {
           display: inline-block;
-          background-color: var(--global-theme-color);
+          background-color: var(--global-code-bg-color);
+          color: var(--global-text-color)!important;
           padding-left: .5rem;
           padding-right: .5rem;
           a {
-            color: white;
+            color: inherit;
             &:hover {
               text-decoration: none;
             }
