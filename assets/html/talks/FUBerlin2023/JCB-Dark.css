@@ -1,0 +1,29 @@
+/*!
+ * @theme JCB-Dark
+ * @author Jacob Bridgeman
+ */
+
+@import-theme 'JCB';
+
+:root {
+    --theme-color: rgb(30,100,200);
+
+    --main-ft-color: rgb(255,255,255);
+    --main-bg-color: rgb(34, 34, 34);
+
+    --head-ft-color: rgb(255,255,255);
+    --head-bg-color: var(--theme-color);
+
+    --foot-ft-color: rgb(255,255,255);
+    --foot-bg-color: var(--theme-color);
+
+    --code-ft-color: rgb(255,255,255);
+    --code-bg-color: rgba(30, 100, 200, .1);
+
+    --highlight-ft-color: rgb(255, 255, 255);
+
+    --main-ft-weight: 400;
+    --head-ft-weight: bold;
+    --foot-ft-weight: bold;
+    --title-ft-weight: bold;
+}

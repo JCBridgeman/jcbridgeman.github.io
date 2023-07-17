@@ -1,0 +1,22 @@
+Each volume forms a 2D *stabilizer* color code
+</div>
+
+<!-- 
+    Gauge outcomes are random, but correlated.
+
+    - In the absence of measurement errors, gauge flux forms closed loops, which change color at violated stabilizers (volumes)
+
+    - When there is measurement error, the gauge flux is no longer closed. End points at vertices.
+        - Topological order implies a gauss law at the vertices. Total charge on sphere must be trivial.
+
+-->
+
+<!-- 
+    Overview of the talk: 
+    The
+-->
+
+<div align="center">
+<iframe src="./assets/html/corner.html" scrolling="no" frameBorder="0">
+</iframe>
+</div>

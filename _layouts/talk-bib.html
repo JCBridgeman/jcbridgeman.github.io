@@ -6,7 +6,15 @@
   {% if entry.slides or entry.poster %}
   <div class="col-sm-2 preview">
     {% if entry.slides %}
-    {%- assign entry_path = entry.slides | prepend: '/assets/pdf/talks/thumbnails/' | append: '.png' -%}
+    {%- capture slides_filetype -%}
+    {%- assign slides_filestr = entry.slides | split: '.' -%}
+    {%- if slides_filestr.size == 2 -%}
+    {{slides_filestr | last}}
+    {%- else -%}
+    pdf
+    {%- endif -%}
+    {%- endcapture -%}
+    {%- assign entry_path = slides_filestr.first | prepend: '/assets/pdf/talks/thumbnails/' | append: '.png' -%}
     {%- assign alt-text = entry.slides -%}
     {% elsif entry.poster %}
     {%- assign entry_path = entry.poster | prepend: '/assets/pdf/posters/thumbnails/' | append: '.png' -%}
@@ -21,7 +29,6 @@
   <div class="col-sm-2 abbr">
   </div>
   {% endif %}
-
 
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="col-sm-8">
@@ -133,11 +140,7 @@
       {%- endif %}
       {%- endif %}
       {%- if entry.slides %}
-      {% if entry.slides contains '://' -%}
-      <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
-      {%- else -%}
-      <a href="{{ entry.slides | prepend: '/assets/pdf/talks/' | relative_url | append: '.pdf'}}" class="btn btn-sm z-depth-0" role="button">Slides</a>
-      {%- endif %}
+      <a href="{{ slides_filestr.first | prepend: '/' | prepend: slides_filestr.first | prepend: '/talks/' | prepend: slides_filetype | prepend: '/assets/' | relative_url | append: '.' | append: slides_filetype }}" class="btn btn-sm z-depth-0" role="button"> Slides </a>
       {%- endif %}
       {%- if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
