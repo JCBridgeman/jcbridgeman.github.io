@@ -341,7 +341,7 @@ QEC step:
 
 <div class="right" style="font-size:1.5rem;">
 
-Error channel: $\mathcal{E}(\rho) := (1-p)\rho + \frac{p}{d-1} \sum_{j=1}^{d-1} Z^j \rho Z^{-1}$
+Error channel: $\mathcal{E}(\rho) := (1-p)\rho + \frac{p}{d-1} \sum_{j=1}^{d-1} Z^j \rho Z^{-j}$
 
 <img src="assets/img/numerics_threshold.png" style="width:570px;">
 
