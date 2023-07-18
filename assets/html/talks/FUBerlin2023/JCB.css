@@ -117,11 +117,10 @@ figcaption {
     font-size: 1.5rem;
   }
 
-
 section {
     background-color: var(--main-bg-color,var(--main-bg-color-default));
     padding: 80px;
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 section.titleSlide {
@@ -174,29 +173,28 @@ section.questionSlide * {
 section.twocolumn{
     display: grid;
     grid-template-areas: "t t""l r""b b";
+    align-items: center;
 }
 
 section.twocolumn > .top{
     grid-area: t;
     text-align: center;
-    vertical-align: middle;
 }
 
 section.twocolumn > .bottom{
     grid-area: b;
     text-align: center;
-    vertical-align: middle;
 }
 
 section.twocolumn > .left{
     grid-area: l;
     text-align: left;
-    vertical-align: middle;
 }
 
 section.twocolumn > .right{
     grid-area: r;
     text-align: right;
+    display: table-cell;
     vertical-align: middle;
 }
 

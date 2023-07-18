@@ -99,10 +99,37 @@ Given a stabilizer code, add some logical pairs to $\mathcal{S}$ to get a subsys
 </div>
 
 ---
+
+<!-- _header: Subsystem codes | ⟦4,2,2⟧ ⟶ ⟦4,1,2⟧ -->
+
+⟦4,2,2⟧ stabilizer code:
+<div align="center">
+
+$\mathcal{S} = \bigg\langle$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/stabX.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/stabZ.png" > $\bigg\rangle$
+</div>
+
+Two logical qubits: 
+
+<div align="center">
+
+$\overline{X_1}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LX1.png" > &nbsp;&nbsp;$\overline{Z_1}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LZ1.png" > &nbsp;&nbsp;$\overline{X_1}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LX2.png" > &nbsp;&nbsp; $\overline{Z_2}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LZ2.png" >
+</div>
+
+
+<div style="border-top:1px solid var(--theme-color,var(--theme-color-default));">
+
+⟦4,1,2⟧ subsystem code: 
+<div align="center">
+
+$\mathcal{G} = \langle \mathcal{S}, \overline{X_2}, \overline{Z_2} \rangle = \bigg\langle$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GX1.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GX2.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GZ1.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GZ2.png" > $\bigg\rangle$
+</div>
+</div>
+
+---
 <!-- _header: Subsystem codes | Why?-->
 
 
-- Lower weigh check operators
+- Lower weight check operators
 
 - More fault-tolerant logical gates
 
@@ -168,6 +195,24 @@ Given a stabilizer code, add some logical pairs to $\mathcal{S}$ to get a subsys
 </div>
 
 ---
+<!-- _header: ⟦4,1,2⟧ Code | Gauge flux -->
+
+⟦4,1,2⟧ subsystem code: 
+<div align="center">
+
+$\mathcal{G} = \bigg\langle$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GX1.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GX2.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GZ1.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GZ2.png" > $\bigg\rangle$
+
+$\mathcal{S} = \bigg\langle$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/stabX.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/stabZ.png" > $\bigg\rangle$
+</div>
+
+
+<div align="center">
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_A.png" data-marpit-fragment>&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_B.png" data-marpit-fragment>&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_C.png" data-marpit-fragment>
+</div>
+
+---
 
 <!-- _header: Gauge color codes | Observations -->
 <!-- _class: twocolumn -->
@@ -181,7 +226,7 @@ Given a stabilizer code, add some logical pairs to $\mathcal{S}$ to get a subsys
 <img src="./assets/img/2DColorCodes.png" style="width:650px; padding-bottom:0px; margin-bottom: 0px"/>
 </div>
 
-<div class="bottom" data-marpit-fragment>
+<div class="bottom">
 
 * Each volume forms a 2D *stabilizer* color code
 * Qubits are *shared* between neighboring codes
@@ -267,7 +312,7 @@ Given a stabilizer code, add some logical pairs to $\mathcal{S}$ to get a subsys
 <!-- _header: Error correction -->
 
 Error correction is a two step process:
-1) 'Validate' gauge flux to remove broken loops
+1) Validate gauge flux to remove broken loops
     - Identify end points of broken loops and match them up
 
 2) Correct residual errors to ensure charge on volumes is neutral
@@ -345,9 +390,10 @@ Error channel: $\mathcal{E}(\rho) := (1-p)\rho + \frac{p}{d-1} \sum_{j=1}^{d-1} 
 
 When defined on a cube, we can use the boundaries of the 2D code to define the gauge operators
 
-<iframe src="./assets/html/roughBoundary.html" scrolling="no" frameBorder="0"     style="width:365px"></iframe>
-<iframe src="./assets/html/RoughSmoothCorner.html" scrolling="no" frameBorder="0" style="width:365px"></iframe>
-<iframe src="./assets/html/smoothBoundary.html" scrolling="no" frameBorder="0"    style="width:365px"></iframe>
+<iframe src="./assets/html/roughBoundary.html" scrolling="no" frameBorder="0"  style="height:365px;width:365px;"></iframe>
+<iframe src="./assets/html/RoughSmoothCorner.html" scrolling="no" frameBorder="0" style="height:365px;width:365px;"></iframe>
+<iframe src="./assets/html/smoothBoundary.html" scrolling="no" frameBorder="0" style="height:365px;width:365px;"></iframe>
+
 
 ---
 
@@ -384,3 +430,17 @@ Any questions?
 
 
 <span> Slides available at [jcbridgeman.github.io](https://jcbridgeman.github.io) </span>
+
+<script type="text/javascript">
+var sc_project=11717036; 
+var sc_invisible=1; 
+var sc_security="78149843"; 
+</script>
+<script src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="site stats"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/11717036/0/78149843/1/"
+alt="site stats"></a></div>
+</noscript>
