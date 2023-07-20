@@ -1,6 +1,7 @@
 ---
 ---
 <!-- _layouts/bib.html -->
+{%- assign link_address = nil -%}
 <div class="row">
 
   <div class="col-sm-2 {% if entry.abbr %}abbr{% elsif entry.preview %}preview{% else %}abbr{% endif %}">
@@ -22,7 +23,6 @@
         {% endcapture %}
       {%- endif -%}
       <abbr class="badge badge-pill" {% if venue_style %}{{venue_style}}{% endif %}>
-        {%- assign link_address = nil -%}
         {% if entry.doi or entry.accepted %}
         {%- capture link_address -%}
           {%- if entry.doi -%}
@@ -163,9 +163,12 @@
     {%- if entry.doi -%}
     <a href="https://dx.doi.org/{{ entry.doi }}">
       {{entry.journal}}, <b>{{entry.volume}}</b>, {{entry.pages}}</a>
+    {%- elsif link_address !=nil -%}
+    <a href="{{ link_address }}">
+      {{entry.journal}} (in press)</a>
     {%- elsif entry.accepted !=blank -%}
     <a href="{{ entry.accepted }}">
-      {{entry.journal}}</a>, in press
+      {{entry.journal}} (in press)</a>
     {%- endif -%}
     {%- endcapture -%}
     {% else %}
