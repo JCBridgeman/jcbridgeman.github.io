@@ -143,7 +143,7 @@
       {%- if slides_filetype == "html" -%}
       <a href="{{ slides_filestr.first | prepend: '/' | prepend: slides_filestr.first | prepend: '/talks/' | prepend: slides_filetype | prepend: '/assets/' | relative_url | append: '.' | append: slides_filetype }}" class="btn btn-sm z-depth-0" role="button"> Slides </a>
       {%- else -%}
-      <a href="{{ slides_filestr.first | prepend: '/' | prepend: '/talks/' | prepend: slides_filetype | prepend: '/assets/' | relative_url | append: '.' | append: slides_filetype }}" class="btn btn-sm z-depth-0" role="button"> Slides </a>
+      <a href="{{ slides_filestr.first | prepend: '/talks/' | prepend: slides_filetype | prepend: '/assets/' | relative_url | append: '.' | append: slides_filetype }}" class="btn btn-sm z-depth-0" role="button"> Slides </a>
       {%- endif -%}
       {%- endif %}
       {%- if entry.website %}
