@@ -26,6 +26,6 @@ I focus on the intersection between quantum computing, specifically error correc
 
 I completed my PhD at the [University of Sydney, with Stephen Bartlett, Andrew Doherty and Steve Flammia]. This was followed by a postdoctoral fellowship at the [Perimeter Institute]. My full CV is available [here].
 
-[University of Sydney, with Stephen Bartlett, Andrew Doherty and Steve Flammia]:https://quantum.sydney.edu.au/research/quantum-theory-group/
+[University of Sydney, with Stephen Bartlett, Andrew Doherty and Steve Flammia]: https://quantum.sydney.edu.au/research/quantum-theory-group/
 [Perimeter Institute]: https://perimeterinstitute.ca/
 [here]: https://jcbridgeman.github.io/cv/
