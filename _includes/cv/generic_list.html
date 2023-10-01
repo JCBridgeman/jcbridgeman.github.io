@@ -1,0 +1,26 @@
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for content in entry.contents %}
+  <li class="list-group-item">
+    <h6 class="title font-weight-bold ml-1 ml-md-4"> {{content.title}} </h6>
+    {% if content.type %}
+      {% case content.type %}
+        {% when "list" %}
+          {% include cv/list.html %}
+        {% when "map" %}
+          {% include cv/map.html %}
+        {% when "nested_list" %}
+          {% include cv/nested_list.html %}
+        {% when "time_table" %}
+          {% assign current_entry=content %}
+          {% include cv/minimal_time_table.html %}
+      {% endcase %}
+    {% elsif content.items %}
+    <ul class="subitems">
+      {% for subitem in content.items %}
+      <li><span class="subitem">{{ subitem }}</span></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

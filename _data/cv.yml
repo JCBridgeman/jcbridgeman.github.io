@@ -123,17 +123,33 @@
         - <b>Kevin Vervoort</b>, UGent, Supervisor&#58 <a href="https://lib.ugent.be/catalog/rug01:003059937">Topological Wormholes in Tensor Networks</a>
 
 - title: Service to the community
-  type: nested_list
+  type: generic_list
   contents:
     - title: Conference organization
-      items:
-        - <b>2023 <a href="https://qip2023.ugent.be/">Quantum Information Processing 2023</a></b>&#58 Co-chair and primary local organizer
-        - <b>2022 <a href="https://aimath.org/pastworkshops/highercattopord.html">American Institute of Mathematics Workshop</a></b>&#58 <b>Higher categories and topological order</b>, with Tobias Osborne, David Penneys, and Julia Plavnik
-        - <b>2022 <a href="https://aimath.org/pastworkshops/fusiontensorV.html">American Institute of Mathematics Workshop</a></b>&#58 <b>Fusion categories and tensor networks</b>, with Tobias Osborne, David Penneys, and Julia Plavnik
+      type: time_table
+      contents:
+        - year: 2024
+          items:
+            - <b><a href="https://qip2024.tw/site/?sid=1522">Quantum Information Processing 2024, Taiwan</a></b>
+              <br>&ensp; Program committee
+        - year: 2023
+          items:
+            - <b><a href="https://qip2023.ugent.be/">Quantum Information Processing 2023, Ghent</a></b>
+              <br>&ensp; Co-chair and primary local organizer
+        - year: 2022
+          items: 
+            - <b><a href="https://aimath.org/pastworkshops/highercattopord.html">American Institute of Mathematics Workshop</a></b> 
+              <br>&ensp; <b>Higher categories and topological order</b>, with Tobias Osborne, David Penneys, and Julia Plavnik
+            - <b><a href="http://www.solvayinstitutes.be/html/solvayconf_physics.html">28th Solvay Conference on Physics</a></b>
+              <br>&ensp; Scientific secretary
+        - year: 2021
+          items:
+            - <b><a href="https://aimath.org/pastworkshops/fusiontensorV.html">American Institute of Mathematics Workshop</a></b>
+              <br>&ensp; <b>Fusion categories and tensor networks</b>, with Tobias Osborne, David Penneys, and Julia Plavnik
     - title: Refereeing
       items:
         - <b>Journals</b> Physica A&#58 Statistical Mechanics and its Applications, Physical Review {A, B, X, Letters}, Quantum, SciPost Physics
-        - <b>Conferences</b> QIP {2018, 2021, 2022}, TQC {2018, 2020}, QTurn2020
+        - <b>Conferences</b> QIP {2018, 2021, 2022, 2024}, TQC {2018, 2020}, QTurn2020
         - <b>Books</b> Oxford University Press
         - <b>Grants</b> NSERC (Canada)
 
