@@ -11,7 +11,7 @@ footer:
 ---
 
 <!-- _class: "titleSlide" -->
-<!-- _footer: "<div class='right'>Freie Universität Berlin, July 2023</div>" -->
+<!-- _footer: "<div class='right'>EQUS — Sydney University, October 2023</div>" -->
 
 <div class="presentationTitle"> Lifting topological codes: <br> Single-shot codes from topological order</div>
 
@@ -213,7 +213,33 @@ $\mathcal{S} = \bigg\langle$ <img style="display:inline-block;vertical-align: mi
 </div>
 
 ---
+<!-- _header: Gauge flux | Measurement errors -->
 
+<div align="center">
+
+$\mathcal{G}_{X} = \bigg\langle$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GX1_R.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GX2_R.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GX3_B.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/GX4_B.png" > $\bigg\rangle$
+
+$\mathcal{S} = \bigg\langle$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/stabX.png" > &nbsp;,&nbsp; <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/stabZ.png" > $\bigg\rangle$
+</div>
+
+
+<span align="center">
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_R_A.png" >&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_R_B.png" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_ME_A.png" >&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_ME_B.png" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_Measurement.png" >
+<br><br>
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_B_A.png" >&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_B_B.png" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_ME_C.png" >&nbsp;&nbsp;&nbsp;
+<img style="display:inline-block;vertical-align: middle;" width="150px" src="./assets/img/412/gaugeFlux_ME_D.png" >
+</span>
+
+---
 <!-- _header: Gauge color codes | Observations -->
 <!-- _class: twocolumn -->
 
@@ -341,7 +367,7 @@ QEC step:
 
 <div class="right" style="font-size:1.5rem;">
 
-Error channel: $\mathcal{E}(\rho) := (1-p)\rho + \frac{p}{d-1} \sum_{j=1}^{d-1} Z^j \rho Z^{-j}$
+Error channel: $\mathcal{E}(\rho) := (1-p)\rho + \frac{p}{d-1} \sum_{j=1}^{d-1} Z^j \rho Z^{-1}$
 
 <img src="assets/img/numerics_threshold.png" style="width:570px;">
 
@@ -393,7 +419,6 @@ When defined on a cube, we can use the boundaries of the 2D code to define the g
 <iframe src="./assets/html/roughBoundary.html" scrolling="no" frameBorder="0"  style="height:365px;width:365px;"></iframe>
 <iframe src="./assets/html/RoughSmoothCorner.html" scrolling="no" frameBorder="0" style="height:365px;width:365px;"></iframe>
 <iframe src="./assets/html/smoothBoundary.html" scrolling="no" frameBorder="0" style="height:365px;width:365px;"></iframe>
-
 
 ---
 

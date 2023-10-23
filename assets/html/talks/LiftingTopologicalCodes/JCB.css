@@ -117,6 +117,7 @@ figcaption {
     font-size: 1.5rem;
   }
 
+
 section {
     background-color: var(--main-bg-color,var(--main-bg-color-default));
     padding: 80px;
