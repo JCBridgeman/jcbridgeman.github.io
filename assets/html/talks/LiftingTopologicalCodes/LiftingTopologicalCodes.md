@@ -112,7 +112,7 @@ Two logical qubits:
 
 <div align="center">
 
-$\overline{X_1}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LX1.png" > &nbsp;&nbsp;$\overline{Z_1}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LZ1.png" > &nbsp;&nbsp;$\overline{X_1}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LX2.png" > &nbsp;&nbsp; $\overline{Z_2}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LZ2.png" >
+$\overline{X_1}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LX1.png" > &nbsp;&nbsp;$\overline{Z_1}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LZ1.png" > &nbsp;&nbsp;$\overline{X_2}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LX2.png" > &nbsp;&nbsp; $\overline{Z_2}=$ <img style="display:inline-block;vertical-align: middle;" width="75px" src="./assets/img/412/LZ2.png" >
 </div>
 
 
