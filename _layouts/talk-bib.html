@@ -2,7 +2,6 @@
 ---
 <!-- _layouts/bib.html -->
 <div class="row">
-
   {% if entry.slides or entry.poster %}
   <div class="col-sm-2 preview">
     {% if entry.slides %}
@@ -14,22 +13,35 @@
     pdf
     {%- endif -%}
     {%- endcapture -%}
+    {%- capture slide_poster_link -%}
+    {%- if slides_filetype == "html" -%}
+    {{ slides_filestr.first | prepend: '/' | prepend: slides_filestr.first | prepend: '/talks/' | prepend: slides_filetype | prepend: '/assets/' | relative_url | append: '.' | append: slides_filetype }}
+    {%- else -%}
+    {{ slides_filestr.first | prepend: '/talks/' | prepend: slides_filetype | prepend: '/assets/' | relative_url | append: '.' | append: slides_filetype }}
+    {%- endif -%}
+    {%- endcapture -%}
     {%- assign entry_path = slides_filestr.first | prepend: '/assets/pdf/talks/thumbnails/' | append: '.png' -%}
     {%- assign alt-text = entry.slides -%}
     {% elsif entry.poster %}
     {%- assign entry_path = entry.poster | prepend: '/assets/pdf/posters/thumbnails/' | append: '.png' -%}
     {%- assign alt-text = entry.poster -%}
+    {%- capture slide_poster_link -%}
+    {% if entry.poster contains '://' -%}
+    {{ entry.poster }}
+    {%- else -%}
+    {{ entry.poster | prepend: '/assets/pdf/posters/' | relative_url  | append: '.pdf'}}
+    {%- endif %}
+    {%- endcapture -%}
     {% endif %}
     {% assign file_exists = site.static_files | where: "path", entry_path  %}
     {% if file_exists.size !=0 %}
-    {% include figure.html path=entry_path class="preview z-depth-1 rounded" alt=alt-text -%}
-    {% endif %}
+    {% include figure.html path=entry_path href=slide_poster_link class="preview z-depth-1 rounded" alt=alt-text -%}
+    {% endif %}  
   </div>
   {% else %}
   <div class="col-sm-2 abbr">
   </div>
   {% endif %}
-
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="col-sm-8">
     <!-- Title -->
