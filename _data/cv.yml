@@ -112,18 +112,36 @@
       items:
         - "<b>School Dux</b>: first in school"
 
+- title: Teaching
+  type: time_table
+  contents:
+    - year: 2012 – 2017
+      items:
+        - <b>Teaching assistant</b>, Computational and experimental labs
+    - year: 2022
+      items:
+        - <b>Guest lecturer</b>, <a href="https://studiekiezer.ugent.be/studiefiche/nl/C003668/2021">Quantum error correction</a>, Ghent University
+    - year: 2024
+      items:
+        - <b>Co-lecturer</b>, <a href="https://studiekiezer.ugent.be/studiefiche/en/C003668/2024">Quantum Computing (Masters)</a>, Ghent University
+
 - title: Students
-  type: nested_list
+  type: generic_list
   contents:
     - title: Undergraduate
       items:
         - <b>Eric Huang</b>, USyd, Auxiliary supervisor for Talented Students Programme project
     - title: Masters
-      items:
-        - <b>Kevin Vervoort</b>, UGent, Supervisor&#58 <a href="https://lib.ugent.be/catalog/rug01:003059937">Topological Wormholes in Tensor Networks</a>
-        - <b>Louis Lammertyn</b>, UGent, Promotor&#58 <a href="https://quantumghent.github.io/thesistopics/2023/BVancraeynest1">A Haagerup phase diagram</a>
-        - <b>Jonas Vanhauwe</b>, UGent, Supervisor
-        - <b>Joachim Slembrouck</b>, UGent, Promotor
+      type: time_table
+      contents:
+        - year: 2021 – 2022
+          items:
+            - <b>Kevin Vervoort</b>, UGent, Supervisor<br> <a href="https://lib.ugent.be/catalog/rug01:003059937">Topological Wormholes in Tensor Networks</a>
+        - year: 2023 – 2024
+          items:
+            - <b>Louis Lammertyn</b>, UGent, Promotor<br> <a href="https://quantumghent.github.io/thesistopics/2023/BVancraeynest1">Towards a half E6 Phase Diagram</a>
+            - <b>Jonas Vanhauwe</b>, UGent, Promotor<br> <a href="https://quantumghent.github.io/thesistopics/2023/JBridgeman2">Universal topological quantum computation using nonuniversal resources</a>
+            - <b>Joachim Slembrouck</b>, UGent (Literature study), Promotor<br> An introduction to tensor categories and their skeletal data
 
 - title: Service to the Community
   type: generic_list
