@@ -12,7 +12,7 @@
   type: time_table
   contents:
     - title: Senior Quantum Architect, Fault Tolerance
-      institution: PsiQuantum
+      at: PsiQuantum
       year: 2024 – today
 
     - title: Senior Postdoctoral Fellow

@@ -27,6 +27,11 @@
           <span class="title font-weight-bold ml-1 ml-md-4">Institution: </span> {{content.institution}}
         </h6>
         {% endif %}
+        {% if content.at %}
+        <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">
+          <span class="title font-weight-bold ml-1 ml-md-4">At: </span> {{content.at}}
+        </h6>
+        {% endif %}
         {% if content.advisor %}
         <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;"> <span class="title font-weight-bold ml-1 ml-md-4">Advisor: </span> {{ content.advisor }}</h6>
         {% endif %}
