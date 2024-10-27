@@ -11,9 +11,13 @@
 - title: Employment
   type: time_table
   contents:
+    - title: Senior Quantum Architect, Fault Tolerance
+      institution: PsiQuantum
+      year: 2024 – today
+
     - title: Senior Postdoctoral Fellow
       institution: Research Foundation–Flanders
-      year: 2022 – today
+      year: 2022 – 2024
       description:
         - hosted by Ghent University. Grant number 12E9223N
 

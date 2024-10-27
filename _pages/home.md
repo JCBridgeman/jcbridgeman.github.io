@@ -2,16 +2,12 @@
 layout: about
 title: home
 permalink: /
-subtitle: <a href="https://www.fwo.be/en/"">Senior FWO fellow</a>, <a href="https://quantumghent.github.io/">hosted at Ghent University</a>.
+subtitle: <a href="https://psiquantum.com/"">Senior Quantum Architect, Fault Tolerance, at PsiQuantum</a>.
 
 profile:
   align: right
   image: JCBridgeman.jpg
   image_circular: false # crops the image to make it circular
-  <!-- address: >
-    <p>Universiteit Gent</p>
-    <p>Krijgslaan 281, S9</p>
-    <p>9000 Gent</p> -->
   address:
 
 news: true # includes a list of news items
