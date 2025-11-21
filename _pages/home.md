@@ -2,7 +2,7 @@
 layout: about
 title: home
 permalink: /
-subtitle: <a href="https://psiquantum.com/"">Senior Quantum Architect &mdash; Fault Tolerance at PsiQuantum</a>.
+subtitle: <a href="https://psiquantum.com/"">Staff Quantum Architect at PsiQuantum</a>.
 
 profile:
   align: right

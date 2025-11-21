@@ -11,9 +11,13 @@
 - title: Employment
   type: time_table
   contents:
+    - title: Staff Quantum Architect
+      at: PsiQuantum
+      year: 2025 – today
+
     - title: Senior Quantum Architect, Fault Tolerance
       at: PsiQuantum
-      year: 2024 – today
+      year: 2024 – 2025
 
     - title: Senior Postdoctoral Fellow
       institution: Research Foundation–Flanders
