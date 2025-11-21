@@ -1,4 +1,4 @@
-name: deploy
+name: Build and Deploy Jekyll site
 
 on:
   push:
@@ -7,35 +7,37 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      # 1️⃣ Checkout the repo
+      - uses: actions/checkout@v4
 
-    - name: Setup variables
-      id: setup
-      run: |
-        echo "SRC_BRANCH=master" >> $GITHUB_OUTPUT
-        echo "DEPLOY_BRANCH=gh-pages" >> $GITHUB_OUTPUT
-        echo "NO_PUSH=" >> $GITHUB_OUTPUT
+      # 2️⃣ Set up Ruby and Bundler
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
 
-    - name: Build site
-      run: |
-        docker run \
-          -v ${{ github.workspace }}:/srv/jekyll \
-          jekyll/jekyll:latest bash -lc "
-            apt-get update &&
-            apt-get install -y imagemagick &&
-            jekyll build --future
-          "
+      # 3️⃣ Install ImageMagick for Jekyll image processing
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
 
-        # copy built site back into workspace (Docker stores it inside /srv/jekyll/_site)
-        cp -r ${{ github.workspace }}/_site ${{ github.workspace }}/_site
+      # 4️⃣ Install Jekyll dependencies
+      - name: Install gems
+        run: bundle install
 
-    - name: Deploy website
-      run: |
-        yes | bash bin/deploy --verbose \
-          ${{ steps.setup.outputs.NO_PUSH }} \
-          --src ${{ steps.setup.outputs.SRC_BRANCH }} \
-          --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
+      # 5️⃣ Build the Jekyll site
+      - name: Build site
+        run: bundle exec jekyll build --future
+
+      # 6️⃣ Deploy to GitHub Pages
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./_site
+          user_name: github-actions
+          user_email: github-actions@github.com
