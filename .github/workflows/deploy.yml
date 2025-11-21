@@ -20,17 +20,18 @@ jobs:
         echo "DEPLOY_BRANCH=gh-pages" >> $GITHUB_OUTPUT
         echo "NO_PUSH=" >> $GITHUB_OUTPUT
 
-    - name: Build the site in the jekyll/builder container
+    - name: Build site
       run: |
         docker run \
           -v ${{ github.workspace }}:/srv/jekyll \
-          -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "
-            apk add --no-cache imagemagick && \
-            chmod -R 777 /srv/jekyll && \
+          jekyll/jekyll:latest bash -lc "
+            apt-get update &&
+            apt-get install -y imagemagick &&
             jekyll build --future
           "
 
+        # copy built site back into workspace (Docker stores it inside /srv/jekyll/_site)
+        cp -r ${{ github.workspace }}/_site ${{ github.workspace }}/_site
 
     - name: Deploy website
       run: |
