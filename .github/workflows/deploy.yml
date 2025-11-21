@@ -25,8 +25,12 @@ jobs:
         docker run \
           -v ${{ github.workspace }}:/srv/jekyll \
           -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest \
-          /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+          jekyll/builder:latest /bin/bash -c "
+            apk add --no-cache imagemagick && \
+            chmod -R 777 /srv/jekyll && \
+            jekyll build --future
+          "
+
 
     - name: Deploy website
       run: |
