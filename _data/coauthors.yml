@@ -77,3 +77,39 @@
 "Wolf":
   - firstname: ["Ramona", "R."]
     url: https://ramonawolf.com/
+
+"Roberts":
+  - firstname: ["Sam", "S."]
+    url: https://scholar.google.com/citations?user=qPjKjb4AAAAJ&hl=en
+
+"Birchall":
+  - firstname: ["Patrick", "P."] 
+    url: https://scholar.google.com/citations?user=JL3679wAAAAJ&hl=en
+
+"Dawson":
+  - firstname: ["Christopher", "Chris", "C."]
+    url: https://au.linkedin.com/in/chris-dawson-b4219028
+
+"Farrelly":
+  - firstname: ["Terry", "T."]
+    url: https://scholar.google.com/citations?user=TswFfWAAAAAJ&hl=en
+
+"Liu":
+  - firstname: ["Ye-Hua", "Yehua", "Y.-H.", "Y."]
+    url: https://scholar.google.com/citations?user=pbqus_0AAAAJ&hl=en
+
+"Nickerson":
+  - firstname: ["Naomi", "N."]
+    url: https://scholar.google.com/citations?user=NVqV8b4AAAAJ&hl=en
+
+"Pant":
+  - firstname: ["Mihir", "M."]
+    url: https://scholar.google.com/citations?user=ghBuC7UAAAAJ&hl=en
+
+"Seetharam":
+  - firstname: ["Karthik", "K."]
+    url: https://scholar.google.com/citations?user=4V7KsDIAAAAJ&hl=en
+
+"Tuckett":
+  - firstname: ["David", "David K.", "D.K.", "D,"]
+    url: https://davidtuckett.com/
