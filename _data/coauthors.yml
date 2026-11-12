@@ -113,3 +113,31 @@
 "Tuckett":
   - firstname: ["David", "David K.", "D.K.", "D,"]
     url: https://davidtuckett.com/
+
+"Howell":
+  - firstname: ["Sean", "S"]
+    url: https://sghowell.github.io/
+
+"Hartke":
+  - firstname: ["Paul", "P"]
+    url: https://www.amd.com/en/blogs/by-author/paul-hartke.html
+
+"Fleming":
+  - firstname: ["Shane", "Shane T.", "S.", "S.T."]
+    url: https://stfleming.github.io/
+
+"Gimeno-Segovia":
+  - firstname: ["Mercedes", "M."]
+    url: https://scholar.google.com/citations?user=hXuLfrAAAAAJ&hl=en
+
+"Hein":
+  - firstname: ["Timothy", "T."]
+    url: https://www.linkedin.com/in/timothy-hein-1a9810178/
+
+"Richter":
+  - firstname: ["Eddie", "E."]
+    url: https://www.linkedin.com/in/eddie-richter-759220139/
+
+"Kamalakara":
+  - firstname: ["Siddhartha"]
+    url: https://www.linkedin.com/in/siddhartha-rao-kamalakara/
